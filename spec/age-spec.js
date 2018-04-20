@@ -12,7 +12,8 @@ describe('Age', function() {
   it('will take two dates and determine the difference, in seconds, between the two.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let newUser = new Age(1985);
+    let inputBirthYear = 1985;
+    let newUser = new Age(inputBirthYear);
     newUser.setAgeToday(todayYear);
     let output = newUser.ageYearsToSeconds();
     expect(output).toEqual(1040688000);
@@ -21,7 +22,8 @@ describe('Age', function() {
   it('will return the age of a human in Mercury years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let newUser = new Age(1985);
+    let inputBirthYear = 1985;
+    let newUser = new Age(inputBirthYear);
     newUser.setAgeToday(todayYear);
     let output = newUser.ageEarthToMercury();
     expect(output).toEqual(7.92);
@@ -30,7 +32,8 @@ describe('Age', function() {
   it('will return the age of a human in Venus years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let newUser = new Age(1985);
+    let inputBirthYear = 1985;
+    let newUser = new Age(inputBirthYear);
     newUser.setAgeToday(todayYear);
     let output = newUser.ageEarthToVenus();
     expect(output).toEqual(20.46);
@@ -39,7 +42,8 @@ describe('Age', function() {
   it('will return the age of a human in Mars years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let newUser = new Age(1985);
+    let inputBirthYear = 1985;
+    let newUser = new Age(inputBirthYear);
     newUser.setAgeToday(todayYear);
     let output = newUser.ageEarthToMars();
     expect(output).toEqual(62.04);
