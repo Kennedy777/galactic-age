@@ -36,7 +36,7 @@ class Age {
   }
 
   ageEarthToJupiter() {
-    let jupiterAge = this.age*1.88;
+    let jupiterAge = this.age*11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }
 
