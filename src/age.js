@@ -16,6 +16,15 @@ class Age {
     this.age = age;
   }
 
+  setLifeExpectancy(inputAge) {
+    this.lifeExpectancy = inputAge;
+  }
+
+  remainingLife() {
+    let remainingYears = this.age - this.lifeExpectancy;
+    return remainingYears;
+  }
+
   ageYearsToSeconds() {
     return this.age*31536000;
   }
