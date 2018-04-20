@@ -52,10 +52,23 @@ describe('Age', function() {
   it('will return the age of a human in Jupiter years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let newUser = new Age(1985);
+    let inputBirthYear = 1985;
+    let newUser = new Age(inputBirthYear);
     newUser.setAgeToday(todayYear);
     let output = newUser.ageEarthToJupiter();
     expect(output).toEqual(391.38);
+  });
+
+  it('will return the number of years a person has left to live on on Earth given an average life expectancy.', function() {
+    let todayDate = new Date();
+    let todayYear = todayDate.getFullYear();
+    let inputBirthYear = 1985;
+    let inputLifeExpectancy = 78.74;
+    let newUser = new Age(inputBirthYear);
+    newUser.setAgeToday(todayYear);
+    newUser.setLifeExpectancy(inputLifeExpectancy);
+    let output = newUser.remainingLife();
+    expect(output).toEqual(45.74);
   });
 
 });
