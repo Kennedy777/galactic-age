@@ -5,7 +5,9 @@ describe('Age', function() {
   it('will take an age in years and convert it into seconds.', function() {
     let newUser = new Age(2017);
     newUser.age = 1;
+
     let output = newUser.ageYearsToSeconds();
+
     expect(output).toEqual(31536000);
   });
 
@@ -14,8 +16,11 @@ describe('Age', function() {
     let todayYear = todayDate.getFullYear();
     let inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
+
     let output = newUser.ageYearsToSeconds();
+
     expect(output).toEqual(1040688000);
   });
 
@@ -24,8 +29,11 @@ describe('Age', function() {
     let todayYear = todayDate.getFullYear();
     let inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
+
     let output = newUser.ageEarthToMercury();
+
     expect(output).toEqual(7.92);
   });
 
@@ -34,8 +42,11 @@ describe('Age', function() {
     let todayYear = todayDate.getFullYear();
     let inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
+
     let output = newUser.ageEarthToVenus();
+
     expect(output).toEqual(20.46);
   });
 
@@ -44,8 +55,11 @@ describe('Age', function() {
     let todayYear = todayDate.getFullYear();
     let inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
+
     let output = newUser.ageEarthToMars();
+
     expect(output).toEqual(62.04);
   });
 
@@ -54,8 +68,11 @@ describe('Age', function() {
     let todayYear = todayDate.getFullYear();
     let inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
+
     let output = newUser.ageEarthToJupiter();
+
     expect(output).toEqual(391.38);
   });
 
@@ -65,10 +82,13 @@ describe('Age', function() {
     let inputBirthYear = 1985;
     let inputLifeExpectancy = 78.74;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
     newUser.setLifeExpectancy(inputLifeExpectancy);
     newUser.setRemainingLife();
+
     let output = newUser.getRemainingLife();
+
     expect(output).toEqual(45.74);
   });
 
@@ -78,9 +98,11 @@ describe('Age', function() {
     let inputBirthYear = 1985;
     let inputLifeExpectancy = 78.74;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
     newUser.setLifeExpectancy(inputLifeExpectancy);
     newUser.setRemainingLife();
+
     let outputMercury = newUser.remainingLifeToMercury();
     let outputVenus = newUser.remainingLifeToVenus();
     let outputMars = newUser.remainingLifeToMars();
@@ -98,9 +120,11 @@ describe('Age', function() {
     let inputBirthYear = 1939;
     let inputLifeExpectancy = 78.74;
     let newUser = new Age(inputBirthYear);
+
     newUser.setAgeToday(todayYear);
     newUser.setLifeExpectancy(inputLifeExpectancy);
     newUser.setRemainingLife();
+
     let outputMercury = newUser.remainingLifeToMercury();
     let outputVenus = newUser.remainingLifeToVenus();
     let outputMars = newUser.remainingLifeToMars();
@@ -111,5 +135,4 @@ describe('Age', function() {
     expect(outputMars).toEqual(-0.49);
     expect(outputJupiter).toEqual(-3.08);
   });
-
 });

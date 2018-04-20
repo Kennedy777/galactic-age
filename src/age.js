@@ -73,8 +73,6 @@ class Age {
     let jupiterAge = this.remainingLife*11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }
-
-
 }
 
 export { Age };
