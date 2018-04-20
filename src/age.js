@@ -1,7 +1,6 @@
 class Age {
-  constructor(yearBirth, age = 0) {
+  constructor(yearBirth) {
     this.yearBirth = yearBirth;
-    this.age = age;
   }
 
   getAge() {
@@ -12,11 +11,12 @@ class Age {
     return this.yearBirth;
   }
 
-  pushAgeToday(yearCurrent) {
-    return this.age = yearCurrent - this.yearBirth;
+  setAgeToday(yearCurrent) {
+    let age = yearCurrent - this.yearBirth;
+    this.age = age;
   }
 
-  yearsToSeconds() {
+  ageYearsToSeconds() {
     return this.age*31536000;
   }
 
