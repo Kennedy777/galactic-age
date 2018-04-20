@@ -11,6 +11,10 @@ class Age {
     return this.yearBirth;
   }
 
+  getRemainingLife() {
+    return this.remainingLife;
+  }
+
   setAgeToday(yearCurrent) {
     let age = yearCurrent - this.yearBirth;
     this.age = age;
@@ -23,10 +27,6 @@ class Age {
   setRemainingLife() {
     let remainingYears = this.lifeExpectancy - this.age;
     this.remainingLife = parseFloat(remainingYears.toFixed(2));
-  }
-
-  getRemainingLife() {
-    return this.remainingLife;
   }
 
   ageYearsToSeconds() {
@@ -52,7 +52,6 @@ class Age {
     let jupiterAge = this.age*11.86;
     return parseFloat(jupiterAge.toFixed(2));
   }
-
 
   remainingLifeToMercury() {
     let mercuryAge = this.remainingLife*0.24;
