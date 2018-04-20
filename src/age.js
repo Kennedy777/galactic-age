@@ -20,9 +20,13 @@ class Age {
     this.lifeExpectancy = inputAge;
   }
 
-  remainingLife() {
+  setRemainingLife() {
     let remainingYears = this.lifeExpectancy - this.age;
-    return parseFloat(remainingYears.toFixed(2));
+    this.remainingLife = parseFloat(remainingYears.toFixed(2));
+  }
+
+  getRemainingLife() {
+    return this.remainingLife;
   }
 
   ageYearsToSeconds() {

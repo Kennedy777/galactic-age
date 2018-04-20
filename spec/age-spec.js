@@ -67,8 +67,27 @@ describe('Age', function() {
     let newUser = new Age(inputBirthYear);
     newUser.setAgeToday(todayYear);
     newUser.setLifeExpectancy(inputLifeExpectancy);
-    let output = newUser.remainingLife();
+    newUser.setRemainingLife();
+    let output = newUser.getRemainingLife();
     expect(output).toEqual(45.74);
   });
+
+  // it('will return the number of years a person has left to live on each planet.', function() {
+  //   let todayDate = new Date();
+  //   let todayYear = todayDate.getFullYear();
+  //   let inputBirthYear = 1985;
+  //   let inputLifeExpectancy = 78.74;
+  //   let newUser = new Age(inputBirthYear);
+  //   newUser.setAgeToday(todayYear);
+  //   newUser.setLifeExpectancy(inputLifeExpectancy);
+  //
+  //   let remainingEarthYears = newUser.remainingLife();
+  //
+  //
+  //   expect(output).toEqual(10.98);
+  //   expect(output).toEqual(28.36);
+  //   expect(output).toEqual(85.99);
+  //   expect(output).toEqual(542.48);
+  // });
 
 });
