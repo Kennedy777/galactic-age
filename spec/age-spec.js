@@ -14,7 +14,7 @@ describe('Age', function() {
   it('will take two dates and determine the difference, in seconds, between the two.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1985;
+    const inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
 
     newUser.setAgeToday(todayYear);
@@ -27,7 +27,7 @@ describe('Age', function() {
   it('will return the age of a human in Mercury years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1985;
+    const inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
 
     newUser.setAgeToday(todayYear);
@@ -40,7 +40,7 @@ describe('Age', function() {
   it('will return the age of a human in Venus years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1985;
+    const inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
 
     newUser.setAgeToday(todayYear);
@@ -53,7 +53,7 @@ describe('Age', function() {
   it('will return the age of a human in Mars years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1985;
+    const inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
 
     newUser.setAgeToday(todayYear);
@@ -66,7 +66,7 @@ describe('Age', function() {
   it('will return the age of a human in Jupiter years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1985;
+    const inputBirthYear = 1985;
     let newUser = new Age(inputBirthYear);
 
     newUser.setAgeToday(todayYear);
@@ -79,7 +79,7 @@ describe('Age', function() {
   it('will return the number of years a person has left to live on on Earth given an average life expectancy.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1985;
+    const inputBirthYear = 1985;
     let inputLifeExpectancy = 78.74;
     let newUser = new Age(inputBirthYear);
 
@@ -95,7 +95,7 @@ describe('Age', function() {
   it('will return the number of years a person has left to live on each planet.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1985;
+    const inputBirthYear = 1985;
     let inputLifeExpectancy = 78.74;
     let newUser = new Age(inputBirthYear);
 
@@ -117,7 +117,7 @@ describe('Age', function() {
   it('will return the difference between a persons age and the life expectancy if a person has lived beyond their life expectancy', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
-    let inputBirthYear = 1939;
+    const inputBirthYear = 1939;
     let inputLifeExpectancy = 78.74;
     let newUser = new Age(inputBirthYear);
 
