@@ -1,0 +1,12 @@
+.solar-system {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+.planet {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-right: 2%;
+}
