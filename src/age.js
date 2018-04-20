@@ -8,6 +8,14 @@ class Age {
     return this.age;
   }
 
+  getYearBirth() {
+    return this.yearBirth;
+  }
+
+  pushAgeToday(yearCurrent) {
+    return this.age = yearCurrent - this.yearBirth;
+  }
+
   yearsToSeconds() {
     return this.age*31536000;
   }
