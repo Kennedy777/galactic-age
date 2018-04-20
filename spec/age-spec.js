@@ -92,7 +92,7 @@ describe('Age', function() {
     expect(outputJupiter).toEqual(542.48);
   });
 
-  it('will return the number of years a person has left to live on each planet.', function() {
+  it('will return the difference between a persons age and the life expectancy if a person has lived beyond their life expectancy', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
     let inputBirthYear = 1939;
