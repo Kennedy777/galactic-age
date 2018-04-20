@@ -53,6 +53,28 @@ class Age {
     return parseFloat(jupiterAge.toFixed(2));
   }
 
+
+  remainingLifeToMercury() {
+    let mercuryAge = this.remainingLife*0.24;
+    return parseFloat(mercuryAge.toFixed(2));
+  }
+
+  remainingLifeToVenus() {
+    let venusAge = this.remainingLife*0.62;
+    return parseFloat(venusAge.toFixed(2));
+  }
+
+  remainingLifeToMars() {
+    let marsAge = this.remainingLife*1.88;
+    return parseFloat(marsAge.toFixed(2));
+  }
+
+  remainingLifeToJupiter() {
+    let jupiterAge = this.remainingLife*11.86;
+    return parseFloat(jupiterAge.toFixed(2));
+  }
+
+
 }
 
 export { Age };
