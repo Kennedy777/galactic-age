@@ -72,28 +72,28 @@ _Do not contact anyone with questions or comments regarding this project._
   * Input: 2018, 1985
   * Output: 1040688000
 3. The program will return the age of a human in Mercury years. (A Mercury year is .24 Earth years).
-  * Input: 33
+  * Input: 1985
   * Output: 7.92
 4. The program will return the age of a human in Venus years. (A Venus year is .62 Earth years).
-  * Input: 33
+  * Input: 1985
   * Output: 20.46
 5. The program will return the age of a human in Mars years. (A Mars year is 1.88 Earth years).
-  * Input: 33
+  * Input: 1985
   * Output: 62.04
 6. The program will return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years).
-  * Input: 33
+  * Input: 1985
   * Output: 391.38
 7. The program will return the number of years a person has left to live on on Earth given an average life expectancy.
-  * Input: 33, 78.74
+  * Input: 1985, 78.74
   * Output: 45.74
 8. The program will return the number of years a person has left to live on each planet.
-  * Input: 45.74
+  * Input: 1985, 78.74
   * Output (Mercury): 10.98
   * Output (Venus): 28.36
   * Output (Mars): 85.99
   * Output (Jupiter): 542.48
 9. If a person has lived beyond their life expectancy, the program will return the difference between a person's age and the life expectancy.
-  * Input: -0.76
+  * Input: 1985, 78.74
   * Output (Mercury): -0.06
   * Output (Venus): -0.16
   * Output (Mars): -0.49
