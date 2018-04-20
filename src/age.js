@@ -21,8 +21,8 @@ class Age {
   }
 
   remainingLife() {
-    let remainingYears = this.age - this.lifeExpectancy;
-    return remainingYears;
+    let remainingYears = this.lifeExpectancy - this.age;
+    return parseFloat(remainingYears.toFixed(2));
   }
 
   ageYearsToSeconds() {
