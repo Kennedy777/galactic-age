@@ -25,6 +25,11 @@ class Age {
     return parseFloat(mercuryAge.toFixed(2));
   }
 
+  ageEarthToVenus() {
+    let venusAge = this.age*0.62;
+    return parseFloat(venusAge.toFixed(2));
+  }
+
 }
 
 export { Age };
