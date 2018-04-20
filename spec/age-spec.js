@@ -45,4 +45,13 @@ describe('Age', function() {
     expect(output).toEqual(62.04);
   });
 
+  it('will return the age of a human in Jupiter years.', function() {
+    let todayDate = new Date();
+    let todayYear = todayDate.getFullYear();
+    let newUser = new Age(1985);
+    newUser.setAgeToday(todayYear);
+    let output = newUser.ageEarthToJupiter();
+    expect(output).toEqual(391.38);
+  });
+
 });
