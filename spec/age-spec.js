@@ -27,4 +27,13 @@ describe('Age', function() {
     expect(output).toEqual(7.92);
   });
 
+  it('will return the age of a human in Venus years.', function() {
+    let todayDate = new Date();
+    let todayYear = todayDate.getFullYear();
+    let newUser = new Age(1985);
+    newUser.setAgeToday(todayYear);
+    let output = newUser.ageEarthToVenus();
+    expect(output).toEqual(20.46);
+  });
+
 });
