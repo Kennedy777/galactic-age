@@ -20,6 +20,11 @@ class Age {
     return this.age*31536000;
   }
 
+  ageEarthToMercury() {
+    let mercuryAge = this.age*0.24;
+    return mercuryAge.toFixed(2);
+  }
+
 }
 
 export { Age };
