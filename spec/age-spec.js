@@ -18,7 +18,7 @@ describe('Age', function() {
     expect(output).toEqual(1040688000);
   });
 
-  it('will will return the age of a human in Mercury years.', function() {
+  it('will return the age of a human in Mercury years.', function() {
     let todayDate = new Date();
     let todayYear = todayDate.getFullYear();
     let newUser = new Age(1985);

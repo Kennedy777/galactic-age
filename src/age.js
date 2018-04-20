@@ -22,7 +22,7 @@ class Age {
 
   ageEarthToMercury() {
     let mercuryAge = this.age*0.24;
-    return parseInt(mercuryAge.toFixed(2));
+    return parseFloat(mercuryAge.toFixed(2));
   }
 
 }
