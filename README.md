@@ -93,7 +93,7 @@ _Do not contact anyone with questions or comments regarding this project._
   * Output (Mars): 85.99
   * Output (Jupiter): 542.48
 9. If a person has lived beyond their life expectancy, the program will return the difference between a person's age and the life expectancy.
-  * Input: 1985, 78.74
+  * Input: 1939, 78.74
   * Output (Mercury): -0.06
   * Output (Venus): -0.16
   * Output (Mars): -0.49
