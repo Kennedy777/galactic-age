@@ -92,4 +92,24 @@ describe('Age', function() {
     expect(outputJupiter).toEqual(542.48);
   });
 
+  it('will return the number of years a person has left to live on each planet.', function() {
+    let todayDate = new Date();
+    let todayYear = todayDate.getFullYear();
+    let inputBirthYear = 1939;
+    let inputLifeExpectancy = 78.74;
+    let newUser = new Age(inputBirthYear);
+    newUser.setAgeToday(todayYear);
+    newUser.setLifeExpectancy(inputLifeExpectancy);
+    newUser.setRemainingLife();
+    let outputMercury = newUser.remainingLifeToMercury();
+    let outputVenus = newUser.remainingLifeToVenus();
+    let outputMars = newUser.remainingLifeToMars();
+    let outputJupiter = newUser.remainingLifeToJupiter();
+
+    expect(outputMercury).toEqual( -0.06);
+    expect(outputVenus).toEqual(-0.16);
+    expect(outputMars).toEqual(-0.49);
+    expect(outputJupiter).toEqual(-3.08);
+  });
+
 });
