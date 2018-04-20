@@ -36,4 +36,13 @@ describe('Age', function() {
     expect(output).toEqual(20.46);
   });
 
+  it('will return the age of a human in Mars years.', function() {
+    let todayDate = new Date();
+    let todayYear = todayDate.getFullYear();
+    let newUser = new Age(1985);
+    newUser.setAgeToday(todayYear);
+    let output = newUser.ageEarthToMars();
+    expect(output).toEqual(62.04);
+  });
+
 });
