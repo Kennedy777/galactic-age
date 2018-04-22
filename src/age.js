@@ -13,8 +13,8 @@ class Age {
     this.yearBirth = yearBirth;
     this.yearCurrent = yearCurrent;
     this.lifeExpectancy = lifeExpectancy;
-    this.age = diff(this.yearCurrent - this.yearBirth);
-    this.remainingLife = diff(this.lifeExpectancy - this.age);
+    this.age = diff(this.yearCurrent, this.yearBirth);
+    this.remainingLife = diff(this.lifeExpectancy, this.age);
   }
 
   getAge() {
