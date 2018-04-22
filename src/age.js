@@ -5,7 +5,7 @@ export function diff(year1, year2) {
 
 export function postDecimalDigits(number) {
   let output = number.toFixed(2);
-  return parseFloat(number);
+  return parseFloat(output);
 }
 
 class Age {
