@@ -14,11 +14,7 @@ $(document).ready(function() {
     let todayYear = todayDate.getFullYear();
     const inputBirthYear = parseInt($("#birthyear").val());
     let inputLifeExpectancy = parseInt($("#life").val());
-    let newUser = new Age(inputBirthYear);
-
-    newUser.setAgeToday(todayYear);
-    newUser.setLifeExpectancy(inputLifeExpectancy);
-    newUser.setRemainingLife();
+    let newUser = new Age(inputBirthYear, todayYear, inputLifeExpectancy);
 
     let ageMercury = newUser.ageEarthToMercury();
     let ageVenus = newUser.ageEarthToVenus();
