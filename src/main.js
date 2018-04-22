@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 import { Age } from './../src/age.js';
+import { diff } from './../src/age.js';
+import { postDecimalDigits } from './../src/age.js';
 
 $(document).ready(function() {
   $(".solar-system").hide();
