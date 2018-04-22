@@ -1,6 +1,20 @@
+export function diff(year1, year2) {
+  let diff = (year1 - year2).toFixed(2);
+  return parseFloat(diff);
+}
+
+export function postDecimalDigits(number) {
+  let output = number.toFixed(2);
+  return parseFloat(number);
+}
+
 class Age {
-  constructor(yearBirth) {
+  constructor(yearBirth, yearCurrent, lifeExpectancy) {
     this.yearBirth = yearBirth;
+    this.yearCurrent = yearCurrent;
+    this.lifeExpectancy = lifeExpectancy;
+    this.age = diff(this.yearCurrent - this.yearBirth);
+    this.remainingLife = diff(this.lifeExpectancy - this.age);
   }
 
   getAge() {
@@ -15,62 +29,40 @@ class Age {
     return this.remainingLife;
   }
 
-  setAgeToday(yearCurrent) {
-    let age = yearCurrent - this.yearBirth;
-    this.age = age;
-  }
-
-  setLifeExpectancy(inputAge) {
-    this.lifeExpectancy = inputAge;
-  }
-
-  setRemainingLife() {
-    let remainingYears = this.lifeExpectancy - this.age;
-    this.remainingLife = parseFloat(remainingYears.toFixed(2));
-  }
-
   ageYearsToSeconds() {
     return this.age*31536000;
   }
 
   ageEarthToMercury() {
-    let mercuryAge = this.age*0.24;
-    return parseFloat(mercuryAge.toFixed(2));
+    return postDecimalDigits(this.age*0.24);
   }
 
   ageEarthToVenus() {
-    let venusAge = this.age*0.62;
-    return parseFloat(venusAge.toFixed(2));
+    return postDecimalDigits(this.age*0.62);
   }
 
   ageEarthToMars() {
-    let marsAge = this.age*1.88;
-    return parseFloat(marsAge.toFixed(2));
+    return postDecimalDigits(this.age*1.88);
   }
 
   ageEarthToJupiter() {
-    let jupiterAge = this.age*11.86;
-    return parseFloat(jupiterAge.toFixed(2));
+    return postDecimalDigits(this.age*11.86);
   }
 
   remainingLifeToMercury() {
-    let mercuryAge = this.remainingLife*0.24;
-    return parseFloat(mercuryAge.toFixed(2));
+    return postDecimalDigits(this.remainingLife*0.24);
   }
 
   remainingLifeToVenus() {
-    let venusAge = this.remainingLife*0.62;
-    return parseFloat(venusAge.toFixed(2));
+    return postDecimalDigits(this.remainingLife*0.62);
   }
 
   remainingLifeToMars() {
-    let marsAge = this.remainingLife*1.88;
-    return parseFloat(marsAge.toFixed(2));
+    return postDecimalDigits(this.remainingLife*1.88);
   }
 
   remainingLifeToJupiter() {
-    let jupiterAge = this.remainingLife*11.86;
-    return parseFloat(jupiterAge.toFixed(2));
+    return postDecimalDigits(this.remainingLife*11.86);
   }
 }
 
