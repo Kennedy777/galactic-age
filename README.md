@@ -1,4 +1,4 @@
-# _Galactic Age Calculator_
+#_Galactic Age Calculator_
 
 #### _This application will determine a persons age on various planets. Personal project for Epicodus. Week 1 Javascript._
 
@@ -8,6 +8,8 @@
 _This webpage application is designed to calculate the age of a person in galactic time. Given earth years, the program will return age in Mercury, Venus, Mars, and Jupiter years. The project will also determine how many years a person has left to live based on life expectancy. If a person has lived past their expected life expectancy, then The project will return how many years the person has lived beyond expected life expectancy._
 
 _This project uses Webpack to bundle and minify the code. The test runner is Karma and the syntax flavor is Jasmine. Babel is used to transpile ES6. All dependencies required are included in this project._
+
+_View deployed site: https://galactic-age.firebaseapp.com/_
 
 ## Setup/Installation Requirement
 * Clone repository on your local computer.
