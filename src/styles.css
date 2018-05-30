@@ -1,3 +1,7 @@
+.jumbotron svg {
+  height: 350px;
+  text-align: center;
+}
 .solar-system {
   display: flex;
   flex: 1;
