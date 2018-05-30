@@ -1,16 +1,37 @@
-.jumbotron svg {
-  height: 350px;
-  text-align: center;
+
+body {
+  margin: 5% 10%;
 }
-.solar-system {
+.welcome {
   display: flex;
-  flex: 1;
-  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
 
-.planet {
+.left {
+  margin-right: 10%;
   display: flex;
-  flex: 1;
+  justify-content: center;
   flex-direction: column;
-  margin-right: 2%;
+  align-items: flex-start;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right svg {
+  height: 250px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
 }
